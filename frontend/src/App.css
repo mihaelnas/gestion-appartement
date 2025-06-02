@@ -1,0 +1,10 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f; /* Fond principal */
+  color: #e0e0e0;            /* Couleur de texte claire */
+  min-height: 100vh;
+  padding: 20px;
+
+}
+

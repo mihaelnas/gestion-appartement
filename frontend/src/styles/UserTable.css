@@ -1,0 +1,143 @@
+.user-table {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #2a2a3d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+.user-table h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: left;
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: #e0e0e0;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 18px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+    font-size: 15px;
+    color: #e0e0e0;
+    background-color: #1f1f2e;
+}
+
+tbody tr:hover {
+    background-color: #29293f;
+    transition: background 0.3s ease;
+}
+
+tfoot td {
+    font-weight: 600;
+    background-color: #24243a;
+    color: #ffffff;
+    font-size: 15px;
+    border-top: 2px solid #007bff;
+}
+
+.edit-btn, .delete-btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.edit-btn {
+    background-color: #ffca28;
+    color: #000;
+}
+
+.edit-btn:hover {
+    background-color: #ffc107;
+}
+
+.delete-btn {
+    background-color: #e53935;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
+}
+
+.Bas {
+    color: #81c784;
+    font-weight: bold;
+}
+
+.Moyen {
+    color: #ffb74d;
+    font-weight: bold;
+}
+
+.Élevé {
+    color: #ef5350;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .user-table {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 12px 10px;
+    }
+
+    .edit-btn, .delete-btn {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .user-table h2 {
+        font-size: 24px;
+    }
+}
+
+tbody tr {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
